@@ -1,3 +1,3 @@
-CheckoutApi api = CheckoutApiImpl.create(sk_XXXX, true, pk_XXXX);
+CheckoutApi api = CheckoutApiImpl.create("your secret key", true, "your public key");
 
 List<EventTypesResponse> allEventTypesResponses = api.eventsClient().retrieveAllEventTypes(null).get();

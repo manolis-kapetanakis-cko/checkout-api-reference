@@ -1,4 +1,4 @@
-CheckoutApi api = CheckoutApiImpl.create(sk_XXXX, true, pk_XXXX);
+CheckoutApi api = CheckoutApiImpl.create("your secret key", true, "your public key");
 
 List < String > eventTypes = Arrays.asList("payment_captured", "payment_approved", "payment_declined");
 

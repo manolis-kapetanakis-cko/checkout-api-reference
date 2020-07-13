@@ -1,11 +1,11 @@
-CheckoutApi api = CheckoutApiImpl.create(sk_XXXX, true, pk_XXXX);
+CheckoutApi api = CheckoutApiImpl.create("your secret key", true, "your public key");
 
 Address billingAddress = new Address();
 billingAddress.setAddressLine1("Checkout.com");
-billingAddress.setAddressLine2("90 Tottenham Court Road");
+billingAddress.setAddressLine2("Shepherdess Walk");
 billingAddress.setCity("London");
 billingAddress.setState("London");
-billingAddress.setZip("W1T 4TJ");
+billingAddress.setZip("N1 7LH");
 billingAddress.setCountry("GB");
 
 Phone phone = new Phone();

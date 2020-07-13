@@ -1,6 +1,6 @@
 CheckoutSdk.configure do |config|
-  config.secret_key = "sk_xxxxxx"
-  config.public_key = "pk_xxxxxx"
+  config.secret_key = "your secret key"
+  config.public_key = "your public key"
   config.base_url   = "https://api.sandbox.checkout.com" #for sandbox
 end
 
@@ -13,10 +13,10 @@ payment_request_source.customer_email = "jokershere@gmail.com"
 payment_request_source.customer_name = "Jack Napier"
 
 payment_request_source.billing_address_line1 = "Checkout.com"
-payment_request_source.billing_address_line2 = "90 Tottenham Court Road"
+payment_request_source.billing_address_line2 = "Shepherdess Walk"
 payment_request_source.billing_city = "London"
 payment_request_source.billing_state = "London"
-payment_request_source.billing_zip = "W1T 4TJ"
+payment_request_source.billing_zip = "N1 7LH"
 payment_request_source.billing_country = "GB"
 
 payment_request_source.phone_country_code = "+1"

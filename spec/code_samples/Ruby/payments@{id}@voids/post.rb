@@ -1,6 +1,6 @@
 CheckoutSdk.configure do |config|
-  config.secret_key = "sk_xxxxxx"
-  config.public_key = "pk_xxxxxx"
+  config.secret_key = "your secret key"
+  config.public_key = "your public key"
   config.base_url   = "https://api.sandbox.checkout.com" #for sandbox
 end
 

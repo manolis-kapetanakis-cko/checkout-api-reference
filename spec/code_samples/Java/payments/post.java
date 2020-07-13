@@ -1,4 +1,4 @@
-CheckoutApi api = CheckoutApiImpl.create("your secret key", false, "your public key");
+CheckoutApi api = CheckoutApiImpl.create("sk_xxxxx", false, "pk_xxxxx");
 TokenSource tokenSource = new TokenSource("tok_ubfj2q76miwundwlk72vxt2i7q");
 PaymentRequest<TokenSource> paymentRequest = PaymentRequest.fromSource(tokenSource, Currency.USD, 5600);
 paymentRequest.setReference("ORD-090857");
@@ -13,7 +13,7 @@ try {
     }
 
     if (response.getPayment().isApproved())
-        return paymentSucessful(response.getPayment());
+        return paymentSuccessful(response.getPayment());
 
     return paymentDeclined(response.getPayment());
 } catch (CheckoutValidationException e) {
