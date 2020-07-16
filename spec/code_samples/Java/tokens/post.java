@@ -1,7 +1,6 @@
 CheckoutApi api = CheckoutApiImpl.create("your secret key", true, "your public key");
 
 WalletTokenRequest walletTokenRequest = new WalletTokenRequest('applepay', tokenData);
-// infered type: "applepay"
 try {
     TokenResponse tokenRequest = api.tokensClient().requestAsync(walletTokenRequest).get();
     String token  = tokenRequest.getToken();
